@@ -1,0 +1,4 @@
+'simulation' ketika problem yang diberikan bisa di track atau di simulasikan
+baik secara iterasi ataupun cara lain
+
+atau bisa dibilang implemented problem?

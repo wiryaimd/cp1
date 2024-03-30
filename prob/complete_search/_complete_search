@@ -1,0 +1,8 @@
+ketika mencari solusi dengan meng iterasi keseluruhan kemungkinan cases
+
+whether it be all elements, 
+all pairs of elements, or all subsets, or all permutations, or recurisevly.
+
+ini dinamakan 'complete search' atau yg sering disebut 'brute force'
+
+because it completely searches the entire solution space.

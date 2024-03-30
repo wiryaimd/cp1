@@ -1,0 +1,27 @@
+
+point travel from x + 1, x - 2, x + 4, x - 8, x + 16 and so on
+
+count total distance to find 'target' position at x line
+
+eg start from x = 3
+and want to find y = 6
+
+note: x+1, x-2, dst
+
+then, total distance is
+3+1 = 4
+(total range from 3 to 4 = 1)
+3-2 = 1
+(total range from 4 to 1 = 3)
+3+4 = 7
+(total range from 1 to 7 = 6)
+
+because x > y (7 > 6), then stop
+and sum all distance 1+3+6 = 10
+then substract to 6, will be 10 - (7-6) == 9
+
+the answer is 9
+
+
+
+

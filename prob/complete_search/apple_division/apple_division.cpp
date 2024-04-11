@@ -23,6 +23,8 @@ void generate(int n, int data[], long long total, int index){
 
     subset.pop_back();
     generate(n, data, total, index + 1);
+
+    
 }
 
 int main(){

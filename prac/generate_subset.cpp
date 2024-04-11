@@ -1,26 +1,30 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
+
 using namespace std;
 
 vector<int> subset;
-void solve(int a[], int n, int index) {
+
+void generate_subset(int data[], int n, int index){
     if(index == n){
-        // print the subset
-        for(int i=0; i<subset.size(); i++){
+        for(int i = 0; i < subset.size(); i++){
             cout << subset[i] << " ";
         }
-        cout << "\n";
-    }else{
-        subset.push_back(a[index]);
-        solve(a, n, index+1);
-        subset.pop_back();
-        solve(a, n, index+1);
+        cout << "crot " << endl;
+        return;
     }
+
+    generate_subset(data, n, index + 1);
+    subset.push_back(data[index]);
+
+    generate_subset(data, n, index + 1);
+    subset.pop_back();
 }
 
-int main() {
-    int a[] = {1, 2, 5};
-    int n = sizeof(a)/sizeof(a[0]);
-    int startIndex = 0;
-    solve(a, n, startIndex);
+int main(){
+
+    int data[3] = {1, 2, 3};
+    generate_subset(data, 3, 0);
+
     return 0;
 }

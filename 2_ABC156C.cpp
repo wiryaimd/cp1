@@ -12,6 +12,11 @@ using namespace std;
 
 int main(){
 
+    /*
+        given n input each i-th have x val
+        find i-th position that total all (xi - ith)^2 is minimum
+    */
+
     int n;
     cin >> n;
 

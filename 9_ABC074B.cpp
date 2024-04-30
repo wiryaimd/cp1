@@ -1,5 +1,5 @@
 /*
- * Prob: #
+ * Prob: Collecting Balls (Easy Version)
  * File Created: Friday, 26th April 2024 11:12:51 pm
  * Author: Wiryaimd
  */

@@ -1,5 +1,5 @@
 /*
- * Prob: #
+ * Prob: Bingo
  * File Created: Friday, 26th April 2024 8:02:42 pm
  * Author: Wiryaimd
  */
@@ -10,6 +10,11 @@
 using namespace std;
 
 int main(){
+
+    /*
+        yes, if theres bingo pattern in 3x3 sheet by selecting index from specific given number
+        otherwise, no
+    */
 
     pair<int, bool> sheet[3][3];
     pair<int, int> pos[105];

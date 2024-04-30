@@ -1,5 +1,5 @@
 /*
- * Prob: #
+ * Prob: Bishop
  * File Created: Friday, 26th April 2024 10:23:54 am
  * Author: Wiryaimd
  */
@@ -13,7 +13,9 @@ using namespace std;
 int main(){
 
     /*
-        how much square the bishop can move, start from top-left
+        how much square the bishop can move, start from top-left,
+
+        odd width will make (w + 1) / 2 square and same for h, then multiply w with h
     */
 
     int h, w;

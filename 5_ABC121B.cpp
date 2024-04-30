@@ -1,5 +1,5 @@
 /*
- * Prob: #
+ * Prob: Can you solve this?
  * File Created: Thursday, 25th April 2024 8:36:46 pm
  * Author: Wiryaimd
  */
@@ -10,6 +10,10 @@
 using namespace std;
 
 int main(){
+
+    /*
+        2d multiplier
+    */
 
     int n, m, c;
     cin >> n >> m >> c;

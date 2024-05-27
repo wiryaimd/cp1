@@ -11,6 +11,16 @@ using namespace std;
 int main(){
 
     /*
+        given N coordinates x, y and t
+        point start at 0,0
+
+        check if that coordinate can arrive at times t
+
+        solution:
+            count using mahattan distance
+            if t more than distance, then check if dist - time is even or not
+
+        note that if t more than dist, an odd movement will cannot arrive at point xy, because thats how coordinate works
 
     */
 
@@ -39,7 +49,7 @@ int main(){
             continue;
         }
 
-        if(dist < currt && (dist - currt) % 2 == 0){
+        if(dist < currt && (currt - dist) % 2 == 0){ // if current time - distance is odd, then its not able to arrive at coordinate xy
             continue;
         }
 

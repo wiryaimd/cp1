@@ -28,7 +28,8 @@ int main(){
         res += cnt;
     }
 
-    cout << res << endl;
+    printf("%.12lf", res);
+    // cout << res << endl;
 
     return 0;
 }

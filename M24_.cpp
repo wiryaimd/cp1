@@ -53,6 +53,7 @@ int main(){
             cout << 0 << endl;
             return 0;
         }
+        // ((N-2)*B - (N-2)*A) + 1
         ll r = (ll)(n - 2) * b;
         ll l = (ll)(n - 2) * a;
         cout << r - l + 1 << endl;

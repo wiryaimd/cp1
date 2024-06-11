@@ -15,6 +15,19 @@
 
 int main(){
 
+    /*
+        given xi val
+
+        check if its possible for each xi * xi+1 is multiple of 4
+
+        the things is
+        if total of xi mod 4 have more than total odd value, then its possible
+        and xi mod 2 (even number) can also possible to making multiple of 4
+            eg. 2x2, 2x12, 2x14, etc
+        
+        then count only odd number and compare if its less than multiple 4 or not
+    */
+
     int n;
     std::cin >> n;
 
@@ -32,11 +45,11 @@ int main(){
         }
     }
 
-    if(n4 + 1 == odd && n2 == 0){
+    if(n4 + 1 == odd && n2 == 0){ // + 1 because one xi mult of 4 can make two odd value be multiple of 4 (eg. 5 x 4 x 7)
         std::cout << "Yes" << std::endl;
-    }else if(odd > n4){
+    }else if(odd > n4){ // if odd more than n4 then not possible (eg. 3 x 4 x 5 x 7)
         std::cout << "No" << std::endl;
-    }else{
+    }else{ // theres some n2 in this condition and total n4 still > odd (eg. 3 x 8 x 2 x 4 x 5 x 4 x 2)
         std::cout << "Yes" << std::endl;
     }
 

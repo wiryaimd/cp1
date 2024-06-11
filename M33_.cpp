@@ -9,6 +9,22 @@
 
 int main(){
 
+    /*
+        print the final string theres char
+        B == deleted
+        1 == add
+        0 == add
+
+        eg. 
+        in, 01B0
+        out, 00
+            because 
+            in 0,
+            in 1,
+            in B == del (1)
+            in, 0
+    */
+
     std::string s;
     std::cin >> s;
 

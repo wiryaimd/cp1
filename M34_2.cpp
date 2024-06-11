@@ -13,6 +13,9 @@ int main(){
         WA 1 testcase, try find em
     */
 
+   freopen("M34.in", "r", stdin);
+   freopen("M34.out", "w", stdout);
+
     int n, k;
     std::cin >> n >> k;
     int ai[n];
@@ -25,23 +28,31 @@ int main(){
     int cnt = 0, ck = 1;
     bool pass = true;
     for(int i = 0; i < n; i++){
-        debug(ck);
         if(ck > k - 1){
             if(!pass){
-                debug("hem");
+                // debug(ai[i]);
                 cnt++;
+                if(i == n - 1){
+                    pass = true;
+                    break;
+                }
             }
             ck = 1;
             pass = true;
+            
         }
         ck++;
 
+        // debug(ck);
         if(ai[i] != minn){
             pass = false;
         }
     }
 
-    if(!pass && n != k) cnt++;
+    if(!pass && n != k) {
+        cnt++;
+        // debug(pass);
+    }
 
     std::cout << cnt << std::endl;
 

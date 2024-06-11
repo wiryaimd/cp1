@@ -15,6 +15,10 @@
 
 int main(){
 
+    /*
+        complete search approach with LA to find k 
+    */
+
     int n, y;
     std::cin >> n >> y;
 

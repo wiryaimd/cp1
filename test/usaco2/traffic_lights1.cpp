@@ -25,7 +25,7 @@ int main(){
             then using multiset (sorted when insertion (may use priority queue)) to get most longest (*multiset.end())
     */
 
-    // why this fast IO make verdict correct?
+    // CSES when TLE will show empty input, use fastio to reduce processing time
     std::ios::sync_with_stdio(false);
 	std::cin.tie(NULL);
  

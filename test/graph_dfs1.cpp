@@ -27,6 +27,14 @@ void dfs(int x){
     }
 }
 
+// use &adj to store vector in function main instead
+// void dfs(int node , vector<set<int>> &adj , vector<int> &vis){
+//     vis[node] = 1;
+//     for(auto i : adj[node]){
+//         if(!vis[i])dfs(i , adj , vis);
+//     }
+// }
+
 int main(){
 
     // graph representation

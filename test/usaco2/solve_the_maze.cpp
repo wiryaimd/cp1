@@ -22,6 +22,7 @@ int dx[4] = {1, -1, 0, 0};
 
 int n, m;
 
+// could be called as dfs()
 void f(int r, int c, bool maze[51][51], std::vector<std::vector<bool>>& visit){
     // debug(visit[0][0]);
     // debug("cek");

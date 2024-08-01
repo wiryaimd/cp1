@@ -61,8 +61,9 @@ int main(){
         }
 
         std::vector<std::vector<bool>> visit(n, std::vector<bool>(m, false));
-        std::queue<std::pair<int, int>> q;
 
+        // bfs approach
+        std::queue<std::pair<int, int>> q;
         q.push({n - 1, m - 1});
         while(!q.empty()){
             std::pair<int, int> p = q.front();

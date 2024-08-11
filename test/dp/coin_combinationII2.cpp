@@ -13,6 +13,8 @@ using ll = long long;
 
 int main(){
 
+    // knapsack problem
+
     int n, x;
     std::cin >> n >> x;
 

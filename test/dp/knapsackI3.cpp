@@ -21,12 +21,12 @@ int main(){
         std::cin >> weight[i] >> val[i];
     }
 
-    std::vector<int> dp(w + 1, 0);
+    std::vector<ll> dp(w + 1, 0);
     for(int i = 0; i < n; i++){
-        for(int j = w; j >= weight[i]; j--){ // howw??
-            if(j - weight[i] >= 0){
+        for(int j = w; j >= weight[i]; j--){ // flying table approach
+            // if(j - weight[i] >= 0){
                 dp[j] = std::max(dp[j], val[i] + dp[j - weight[i]]);
-            }
+            // }
         }
     }
 
